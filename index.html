@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sen:wght400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Swipper Js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <title>Academic Website</title>
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+
+  <style>
+
+
+  </style>
+</head>
+
+<body style="display: flex;">
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="your-logo">
+      <img src="images/_logo2.png" alt="logo" class="logo-img">
+      <div class="aim-container" style="text-align: center;">
+        <div class="aim" style="color: green;">
+          <!-- CREATING A GREENER FUTURE -->
+          <i> Creating a Greener Future</i>
+        </div>
+        <div class="aim" style="color:red;">
+          <!-- ONE BATTERY AT A TIME -->
+          <i>One Battery at a Time</i>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- <div class="nav-links-container"> -->
+    <div class="iit-logo-container">
+      <div style="text-align : center; ">
+        <img src="images/iitbombay.png" alt="logo" class="iit-logo-img">
+        <!-- <span style="margin-top:-10px;">2021</span> -->
+      </div>
+      <div id="bbsr" style="text-align: center;">
+        <img src="images/iitbbsr.png" alt="logo" class="iit-logo-img">
+      </div>
+    </div>
+
+    <!-- navmenu for medium and upper size screens -->
+    <i class="fa-solid fa-bars-staggered" id="menu-icon"></i>
+    <ul class="nav-links" id="nav-items-list">
+      <li class="end-brdr"><a href="#home" class="nav-links-item" id="home_" onclick="set_active_state('home')">Home</a>
+      </li>
+      <li class="end-brdr"><a href="#research" class="nav-links-item" id="research_"
+          onclick="set_active_state('research')">Research </a></li>
+      <li class="end-brdr"><a href="#publications" class="nav-links-item" id="publications_"
+          onclick="set_active_state('publications')">Publications</a></li>
+      <li class="end-brdr"><a href="#experience" class="nav-links-item" id="experience_"
+          onclick="set_active_state('experience')">Experience</a></li>
+      <li class="end-brdr"><a href="#skills" class="nav-links-item" id="skills_"
+          onclick="set_active_state('skills')">Skills</a></li>
+      <!-- Made change to look -->
+      <li class="end-brdr"><a href="#acheivements" class="nav-links-item" id="achievements_"
+          onclick="set_active_state('achievements')">Achievements</a></li>
+      <li class="end-brdr"><a href="#more" class="nav-links-item" id="more_" style="display: flex;">
+          <ul class="dropdown">
+            <span class="">More</span>
+            <div class="dropdown-content">
+              <a href="#key-courses" onclick="set_active_state('key-courses')" id="key-courses_">Key Courses</a>
+              <a href="#key-courses" onclick="set_active_state('course-project')" id="course-project_">Course
+                Projects</a>
+              <a href="#certificates" onclick="set_active_state('certificates')" id="certificates_">Certifications</a>
+              <a href="#resposibilities" onclick="set_active_state('resposibilities')"
+                id="resposibilities_">Responsibilites</a>
+              <a href="#extra-curriculars" onclick="set_active_state('extra-curriculars')"
+                id="extra-curriculars_">Extra-Curriculars</a>
+            </div>
+          </ul>
+        </a>
+      </li>
+      <li><a href="#contactme" class="nav-links-item" id="contactme_"
+          onclick="set_active_state('contactme')">Contact</a></li>
+    </ul>
+
+
+
+    <!-- <div>more section will include POR+EXCur.+ Key Courses + certifications</div> -->
+    <!-- </div> -->
+  </nav>
+  <div class="main-container">
+    <!-- main container  -->
+
+
+
+
+    <!-- Home Section Starts   -->
+    <div id="home" class="hi">
+      <!-- Centre Carousel  -->
+      <span class="swiper-outer">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper ">
+            <!-- Slides -->
+            <!-- <div class="swiper-slide ">
+              <img
+                src="https://images.pexels.com/photos/3153199/pexels-photo-3153199.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="photo-1" class="photo">
+              <span class="shot- Description"></span>
+            </div> -->
+            <!-- <div class="swiper-slide"><img
+                src="https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="photo-2" class="photo"></div> -->
+            <!-- <div class="swiper-slide"><img
+                src="https://images.pexels.com/photos/8439093/pexels-photo-8439093.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="photo-2" class="photo"></div> -->
+            <div class="swiper-slide"><img src="images/IIT-img.png" alt="photo-2" class="photo"></div>
+            <div class="swiper-slide"><img src="images/IIT2-img.jpg" alt="photo-2" class="photo"></div>
+            <div class="swiper-slide"><img src="images/_con_.png" alt="photo-2" class="photo"></div>
+            <div class="swiper-slide"><img src="images/self_con.jpeg" alt="photo-2" class="photo"></div>
+
+
+
+            <!-- <div class="swiper-slide"><img src="images/IIT2-img.jpeg" alt="photo-2" class="photo"></div> -->
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </span>
+
+      <div class="mission-statement-container">
+        <p class="mission-statement" style="line-height: 1.5;">I'm Sreedath Panat, a Ph.D. from MIT (2017-2022) with
+          roots in Mechanical Engineering at IIT Madras (2012-2017). I graduated as the topper of my department at IITM.
+          My MIT research advised by Prof. Kripa Varanasi focused on charged interfaces and energy sustainability,
+          leading to notable publications and collaborations.
+
+          Beyond academia, I've co-founded ed-tech ventures Vizuara and Videsh with my IITM classmates, who are also
+          alumni of MIT and Purdue University. I have also been a part of an MIT spin-off AgZen winning more that $600k
+          in business pitch competitions for AgZen. I also initiated a startup "Caanvi" during the pandemic for
+          mentoring Indian students. My work has earned awards like the deFlorez competition and been featured in MIT's
+          Spotlight. I've held positions at MIT's biggest cultural organization Sangam and been a Chief Speaker at
+          international webinars. Explore my work and join my innovation journey.
+        </p>
+        <div class="mission-statement-img-container"><img class="mission-statement-img"
+            src="https://static.wixstatic.com/media/d6ef9a_722dc99274114642ad65f1de60f9519c~mv2.png/v1/fill/w_523,h_513,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Picture1.png"
+            alt="mission-img" />
+        </div>
+      </div>
+    </div>
+    <!-- Home Section Ends -->
+
+
+    <!-- Research Section Starts  -->
+    <div id="research" class="hi">
+      <div class="projects-container">
+        <div class="heading">Research Themes</div>
+        <div class="theme-img">
+          <img
+            src="https://static.wixstatic.com/media/d6ef9a_2a9e1e3589f143159ad8e71b2653c2e9~mv2.png/v1/fill/w_904,h_464,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/Screenshot%202023-08-04%20at%201_19_25%20PM.png"
+            alt="theme-img" class="them-img">
+        </div>
+
+        <div class="project-card-container">
+          <div class="heading" style="text-align: center; width:98%;">Research Work</div>
+
+          <div class="project-card">
+            <div class="project-card-img">
+              <img
+                src="https://images.pexels.com/photos/3153199/pexels-photo-3153199.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="phto" class="project-card-img">
+            </div>
+            <div class="project-content">
+              <div class="project-card-heading">Project 1</div>
+              <a href="https://www.google.com/" style="color:blue;">Project Link</a>
+              <p class="project-card-description">Lorem, ipsum dolor
+                sit amet consectetur adipisicing elit. Numquam dolore
+                molestiae inventore commodi illo et? Officiis ipsa nesciunt
+                tempora magnam corrupti nulla quam explicabo magni et sed
+                expedita laboriosam reiciendis, cum id neque voluptate
+                aliquam, maxime incidunt perspiciatis facere. Quasi natus,
+                consequatur autem reiciendis dolor dignissimos molestias
+                eum nisi ullam unde blanditiis aut reprehenderit perferendis,
+                cupiditate, consectetur debitis veritatis tenetur harum
+                dolorem ad deleniti sed corporis. Odit ullam magnam suscipit
+                sint libero sunt reprehenderit rem repellendus dicta
+                accusantium! Culpa, modi quisquam? Eum omnis commodi ipsam
+                rem maiores, aut quisquam inventore?
+              </p>
+            </div>
+          </div>
+
+
+          <div class="project-card">
+            <div class="project-card-img">
+              <img
+                src="https://images.pexels.com/photos/3153199/pexels-photo-3153199.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="phto" class="project-card-img">
+            </div>
+            <div class="project-content">
+              <div class="project-card-heading">Project 2</div>
+              <a href="https://www.google.com/" style="color:blue;">Project Link</a>
+              <p class="project-card-description">Lorem, ipsum dolor
+                sit amet consectetur adipisicing elit. Numquam dolore
+                molestiae inventore commodi illo et? Officiis ipsa nesciunt
+                tempora magnam corrupti nulla quam explicabo magni et sed
+                expedita laboriosam reiciendis, cum id neque voluptate
+                aliquam, maxime incidunt perspiciatis facere. Quasi natus,
+                consequatur autem reiciendis dolor dignissimos molestias
+                eum nisi ullam unde blanditiis aut reprehenderit perferendis,
+                cupiditate, consectetur debitis veritatis tenetur harum
+                dolorem ad deleniti sed corporis. Odit ullam magnam suscipit
+                sint libero sunt reprehenderit rem repellendus dicta
+                accusantium! Culpa, modi quisquam? Eum omnis commodi ipsam
+                rem maiores, aut quisquam inventore?
+              </p>
+            </div>
+          </div>
+
+
+          <div class="project-card">
+            <div class="project-card-img">
+              <img
+                src="https://images.pexels.com/photos/3153199/pexels-photo-3153199.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="phto" class="project-card-img">
+            </div>
+            <div class="project-content">
+              <div class="project-card-heading">Project 3</div>
+              <a href="https://www.google.com/" style="color:blue;">Project Link</a>
+              <p class="project-card-description">Lorem, ipsum dolor
+                sit amet consectetur adipisicing elit. Numquam dolore
+                molestiae inventore commodi illo et? Officiis ipsa nesciunt
+                tempora magnam corrupti nulla quam explicabo magni et sed
+                expedita laboriosam reiciendis, cum id neque voluptate
+                aliquam, maxime incidunt perspiciatis facere. Quasi natus,
+                consequatur autem reiciendis dolor dignissimos molestias
+                eum nisi ullam unde blanditiis aut reprehenderit perferendis,
+                cupiditate, consectetur debitis veritatis tenetur harum
+                dolorem ad deleniti sed corporis. Odit ullam magnam suscipit
+                sint libero sunt reprehenderit rem repellendus dicta
+                accusantium! Culpa, modi quisquam? Eum omnis commodi ipsam
+                rem maiores, aut quisquam inventore?
+              </p>
+            </div>
+          </div>
+
+
+          <div class="project-card">
+            <div class="project-card-img">
+              <img
+                src="https://images.pexels.com/photos/3153199/pexels-photo-3153199.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="phto" class="project-card-img">
+            </div>
+            <div class="project-content">
+              <div class="project-card-heading">Project 4</div>
+              <a href="https://www.google.com/" style="color:blue;">Project Link</a>
+              <p class="project-card-description">Lorem, ipsum dolor
+                sit amet consectetur adipisicing elit. Numquam dolore
+                molestiae inventore commodi illo et? Officiis ipsa nesciunt
+                tempora magnam corrupti nulla quam explicabo magni et sed
+                expedita laboriosam reiciendis, cum id neque voluptate
+                aliquam, maxime incidunt perspiciatis facere. Quasi natus,
+                consequatur autem reiciendis dolor dignissimos molestias
+                eum nisi ullam unde blanditiis aut reprehenderit perferendis,
+                cupiditate, consectetur debitis veritatis tenetur harum
+                dolorem ad deleniti sed corporis. Odit ullam magnam suscipit
+                sint libero sunt reprehenderit rem repellendus dicta
+                accusantium! Culpa, modi quisquam? Eum omnis commodi ipsam
+                rem maiores, aut quisquam inventore?
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-card-img">
+              <img
+                src="https://images.pexels.com/photos/3153199/pexels-photo-3153199.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="phto" class="project-card-img">
+            </div>
+            <div class="project-content">
+              <div class="project-card-heading">Project 5</div>
+              <a href="https://www.google.com/" style="color:blue;">Project Link</a>
+              <p class="project-card-description">Lorem, ipsum dolor
+                sit amet consectetur adipisicing elit. Numquam dolore
+                molestiae inventore commodi illo et? Officiis ipsa nesciunt
+                tempora magnam corrupti nulla quam explicabo magni et sed
+                expedita laboriosam reiciendis, cum id neque voluptate
+                aliquam, maxime incidunt perspiciatis facere. Quasi natus,
+                consequatur autem reiciendis dolor dignissimos molestias
+                eum nisi ullam unde blanditiis aut reprehenderit perferendis,
+                cupiditate, consectetur debitis veritatis tenetur harum
+                dolorem ad deleniti sed corporis. Odit ullam magnam suscipit
+                sint libero sunt reprehenderit rem repellendus dicta
+                accusantium! Culpa, modi quisquam? Eum omnis commodi ipsam
+                rem maiores, aut quisquam inventore?
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <!-- Research SectionEnds -->
+
+    <!-- Publication Section Starts  -->
+    <div id="publications" class="hi" style="display:flex; flex-direction:column;">
+      <div class="projects-container">
+        <div class="heading">Conference</div>
+
+        <div class="patent-card-container">
+          <div class="patent-card">
+            <div class="confrence-logo">
+              <img
+                src="https://static.wixstatic.com/media/4a20f9_d7552b09a1c34f6f88f8a72a652229b0~mv2.jpeg/v1/fill/w_148,h_103,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/WhatsApp%20Image%202023-08-03%20at%2010_21_43%20PM.jpeg"
+                alt="-logo" style="aspect-ratio: 1 / 1 ;">
+            </div>
+            <div class="patent-content">
+              <a href="https://www.gcdem2023.com/" class="project-card-heading" target="_blank"
+                style="color: black; text-decoration: underline; font-size: 20px;">Global Conference for Decarbonization
+                of Energy and Materials <br> (GC-DEM 2023)</a>
+              <p class="project-card-description">
+                Accepted abstract on <b> Lithuim Recycling from End-of-Life LFP Batteries</b> <br>
+                Date: December 27th-30th, 2023 (Upcoming)<br>
+                Venue: Nanyang Technological University, Singapore
+              </p>
+              <div class="pdf-btn-container"><button class="pdf-btn"><a href="https://www.gcdem2023.com/"
+                    target="_blank" style="color: black;">LINK</a></button></div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="projects-container">
+        <div class="heading">Publications</div>
+
+        <div class="patent-card-container">
+          <div class="patent-card">
+            <div class="patent-content">
+              <a href="https://www.google.com/" class="project-card-heading"
+                style="color: black; text-decoration: underline; font-size: 20px;">Lorem ipsum, dolor
+                sit amet consectetur adipisicing elit. Cumque, facere.</a>
+              <p class="project-card-description">P. Flores, S.A. McBride, J.M. Galazka, K.K. Varanasi, L. Zea
+                NPJ Microgravity, 9, 66, 2023.
+              </p>
+              <div class="pdf-btn-container"><button class="pdf-btn">PDF</button></div>
+
+            </div>
+          </div>
+
+          <div class="patent-card">
+            <div class="patent-content">
+              <a href="https://www.google.com/" class="project-card-heading"
+                style="color: black; text-decoration: underline; font-size: 20px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eos, maxime assumenda laudantium sed
+                qui!</a>
+              <p class="project-card-description">P. Flores, S.A. McBride, J.M. Galazka, K.K. Varanasi, L. Zea
+                NPJ Microgravity, 9, 66, 2023.
+              </p>
+              <div class="pdf-btn-container"><button class="pdf-btn">PDF</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="projects-container">
+        <div class="heading">Patents</div>
+
+        <div class="patent-card-container">
+          <div class="patent-card">
+            <div class="patent-content">
+              <a href="https://www.google.com/" class="project-card-heading"
+                style="color: black; text-decoration: underline; font-size: 20px;">Lorem ipsum, dolor
+                sit amet consectetur adipisicing elit. Cumque, facere.</a>
+              <p class="project-card-description">P. Flores, S.A. McBride, J.M. Galazka, K.K. Varanasi, L. Zea
+                NPJ Microgravity, 9, 66, 2023.
+              </p>
+              <div class="pdf-btn-container"><button class="pdf-btn">PDF</button></div>
+
+            </div>
+          </div>
+
+          <div class="patent-card">
+            <div class="patent-content">
+              <a href="https://www.google.com/" class="project-card-heading"
+                style="color: black; text-decoration: underline; font-size: 20px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eos, maxime assumenda laudantium sed
+                qui!</a>
+              <p class="project-card-description">P. Flores, S.A. McBride, J.M. Galazka, K.K. Varanasi, L. Zea
+                NPJ Microgravity, 9, 66, 2023.
+              </p>
+              <div class="pdf-btn-container"><button class="pdf-btn">PDF</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Publications Section Ends  -->
+
+    <!-- Experience Section starts  -->
+    <div id="experience" class="hi">
+      <div class="projects-container">
+        <div class="theme-img">
+          <img
+            src="https://static.wixstatic.com/media/d6ef9a_2a9e1e3589f143159ad8e71b2653c2e9~mv2.png/v1/fill/w_904,h_464,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/Screenshot%202023-08-04%20at%201_19_25%20PM.png"
+            alt="theme-img" class="them-img">
+        </div>
+
+        <div class="heading" style="text-align: center; width:98%;">Experience</div>
+
+
+        <div class="experience-cont">
+
+          <div class="experience-card">
+            <div class="company-img">
+              <img src="images/cellark.png" alt="" style="width: 100%;height: 50px; " />
+            </div>
+            <div class="job-role">Research Engineer</div>
+            <div class="company-duration">
+              <span class="company">Cellark</span>
+              <span class="duration">Aug-2023 - Present</span>
+            </div>
+
+            <div class="experience-details">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, corrupti optio. Suscipit
+              exercitationem ducimus nemo in alias itaque error. Magni ut quia nesciunt repellat tenetur? Optio rerum
+              debitis consectetur delectus?
+            </div>
+          </div>
+
+          <div class="experience-card">
+            <div class="company-img">
+              <img src="images/cellark.png" alt="" style="width: 100%;height: 50px; " />
+            </div>
+            <div class="job-role">Research Engineer</div>
+            <div class="company-duration">
+              <span class="company">Cellark</span>
+              <i class="duration">Aug-2023 - Present</i>
+            </div>
+
+            <div class="experience-details">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, corrupti optio. Suscipit
+              exercitationem ducimus nemo in alias itaque error. Magni ut quia nesciunt repellat tenetur? Optio rerum
+              debitis consectetur delectus?
+            </div>
+          </div>
+
+          <div class="experience-card">
+            <div class="company-img">
+              <img src="images/cellark.png" alt="" style="width: 100%;height: 50px; " />
+            </div>
+            <div class="job-role">Research Engineer</div>
+            <div class="company-duration">
+              <span class="company">Cellark</span>
+              <i class="duration">Aug-2023 - Present</i>
+            </div>
+
+            <div class="experience-details">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, corrupti optio. Suscipit
+              exercitationem ducimus nemo in alias itaque error. Magni ut quia nesciunt repellat tenetur? Optio rerum
+              debitis consectetur delectus?
+            </div>
+          </div>
+
+          <div class="experience-card">
+            <div class="company-img">
+              <img src="images/cellark.png" alt="" style="width: 100%;height: 50px; " />
+            </div>
+            <div class="job-role">Research Engineer</div>
+            <div class="company-duration">
+              <span class="company">Cellark</span>
+              <i class="duration">Aug-2023 - Present</i>
+            </div>
+
+            <div class="experience-details">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, corrupti optio. Suscipit
+              exercitationem ducimus nemo in alias itaque error. Magni ut quia nesciunt repellat tenetur? Optio rerum
+              debitis consectetur delectus?
+            </div>
+          </div>
+
+          <div class="experience-card">
+            <div class="company-img">
+              <img src="images/cellark.png" alt="" style="width: 100%;height: 50px; " />
+            </div>
+            <div class="job-role">Research Engineer</div>
+            <div class="company-duration">
+              <span class="company">Cellark</span>
+              <i class="duration">Aug-2023 - Present</i>
+            </div>
+
+            <div class="experience-details">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, corrupti optio. Suscipit
+              exercitationem ducimus nemo in alias itaque error. Magni ut quia nesciunt repellat tenetur? Optio rerum
+              debitis consectetur delectus?
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+    <!-- Experience section Ends  -->
+
+
+    <!-- Skills Section  -->
+    <div id="skills" class="hi">
+      X
+    </div>
+    <!-- Skills Section Ends  -->
+
+
+    <!-- Achievement Section  Starts  -->
+    <div id="achievements" class="hi">
+      X
+    </div>
+    <!-- Achievement Section Ends  -->
+
+    <!-- More Section starts  -->
+
+
+    <!-- Extra-Curriculars Section  Starts -->
+    <div id="extra-curriculars" class="hi">
+      X
+    </div>
+    <!-- Extra-Curriculars Section Ends  -->
+
+    <!-- Resposibilites Section starts  -->
+    <div id="resposibilities" class="hi">
+      X
+    </div>
+    <!-- Resposibilities Section ends  -->
+
+
+    <!-- Certificates Section Starts  -->
+    <div id="certificates" class="hi">
+      X
+    </div>
+    <!-- Certificates Section Ends  -->
+
+    <!-- Key Courses Section Starts  -->
+    <div id="key-courses" class="hi">
+      <div class="projects-container" style="display: flex; flex-direction:column;">
+        <div class="heading">Master of Technology </div>
+        <table>
+          <thead style="font-size: 20px;">
+            <th>Course Code</th>
+            <th>Course Name</th>
+          </thead>
+
+          <tr>
+            <td>MM 417</td>
+            <td>Entrepreneurship in Materials Engineering</td>
+          </tr>
+          <tr>
+            <td>MM 674</td>
+            <td>Materials & Processes for Semiconductor Devices</td>
+          </tr>
+          <tr>
+            <td>MM 677</td>
+            <td>Diffusion Kinetics</td>
+          </tr>
+          <!-- <tr>
+            <td>MM 694</td>
+            <td>Seminar</td>
+          </tr> -->
+          <tr>
+            <td>MM 718</td>
+            <td>Laser Processing and Nanistructures</td>
+          </tr>
+
+          <tr>
+            <td>GC 101</td>
+            <td>Gender in Workplace</td>
+          </tr>
+          <tr>
+            <td>MM 651</td>
+            <td>Thermodynamics of Materials</td>
+          </tr>
+          <tr>
+            <td>MM 695</td>
+            <td>High Temperature Corrosion</td>
+          </tr>
+          <tr>
+            <td>MM 731</td>
+            <td>Experiments in Advanced Materials Processing</td>
+          </tr>
+          <tr>
+            <td>MM 732</td>
+            <td>Structural Characterization of Materials</td>
+          </tr>
+          <tr>
+            <td>MM 733</td>
+            <td>Mechanical Characterization of Materials</td>
+          </tr>
+          <tr>
+            <td>MM 737</td>
+            <td>Physical Metallurgy</td>
+          </tr>
+          <tr>
+            <td>MM 738</td>
+            <td>Physics of Materials</td>
+          </tr>
+          <tr>
+            <td>ES 655</td>
+            <td>Environmental Management</td>
+          </tr>
+          <tr>
+            <td>PS 36</td>
+            <td>Information Economy, Platforms and Governance</td>
+          </tr>
+
+          <tr>
+            <td>MM 899</td>
+            <td>Communication Skills</td>
+          </tr>
+
+        </table>
+
+        <div class="projects-container" style="display: flex; flex-direction:column;">
+          <div class="heading">Bachelor of Technology</div>
+          <table>
+            <thead style="font-size: 20px;">
+              <th>Course Code</th>
+              <th>Course Name</th>
+            </thead>
+            <tr>
+              <td>CE1P001</td>
+              <td>Engineering Drawing and Graphics</td>
+            </tr>
+            <tr>
+              <td>CS1L001</td>
+              <td>Introduction to Programming and Data Structures</td>
+            </tr>
+            <tr>
+              <td>CS1P001</td>
+              <td>Introduction to Programming and Data Structures Laboratory</td>
+            </tr>
+            <tr>
+              <td>MA1L001</td>
+              <td>Mathematics - I</td>
+            </tr>
+            <tr>
+              <td>PH1L001</td>
+              <td>Physics</td>
+            </tr>
+            <tr>
+              <td>PH1P001</td>
+              <td>Physics Laboratory</td>
+            </tr>
+            <tr>
+              <td>CY1L001</td>
+              <td>Chemistry</td>
+            </tr>
+            <tr>
+              <td>CY1P001</td>
+              <td>Chemistry Laboratory</td>
+            </tr>
+            <tr>
+              <td>EE1L001</td>
+              <td>Electrical Technology</td>
+            </tr>
+            <tr>
+              <td>EE1P001</td>
+              <td>Electrical Technology Laboratory</td>
+            </tr>
+            <tr>
+              <td>HS1L002</td>
+              <td>English for Communication</td>
+            </tr>
+            <tr>
+              <td>ME1P001</td>
+              <td>Introduction to Manufacturing Processes</td>
+            </tr>
+            <tr>
+              <td>MA1L002</td>
+              <td>Mathematics - II</td>
+            </tr>
+            <tr>
+              <td>EC2L005</td>
+              <td>Basic Electrinics</td>
+            </tr>
+            <tr>
+              <td>EC2P005</td>
+              <td>Basic Electrinics Laboratory</td>
+            </tr>
+            <tr>
+              <td>ID2L002</td>
+              <td>Introduction to Bioscience and Technology</td>
+            </tr>
+            <tr>
+              <td>ML2P001</td>
+              <td>Introduction to Materials Laboratory</td>
+            </tr>
+            <tr>
+              <td>ID2L001</td>
+              <td>Introduction to Materials Science and Engineering</td>
+            </tr>
+            <tr>
+              <td>MA2L007</td>
+              <td>Numerical Methods</td>
+            </tr>
+            <tr>
+              <td>ML2S001</td>
+              <td>Seminar</td>
+            </tr>
+            <tr>
+              <td>HS2L002</td>
+              <td>Speaking and Presentation</td>
+            </tr>
+            <tr>
+              <td>ML2L002</td>
+              <td>thermodynamics of Materials</td>
+            </tr>
+
+            <tr>
+              <td>ID2L003</td>
+              <td>Environmeental Science, Technology and Management</td>
+            </tr>
+            <tr>
+              <td>HS2L005</td>
+              <td>General Studies and Current Affairs - I</td>
+            </tr>
+            <tr>
+              <td>EE2L004</td>
+              <td>Introduction to Electromangentic Engineering</td>
+            </tr>
+            <tr>
+              <td>ML2L003</td>
+              <td>Materials Processing</td>
+            </tr>
+
+            <tr>
+              <td>ML2P002</td>
+              <td>Materials Processing Laboratory</td>
+            </tr>
+            <tr>
+              <td>ML2L005</td>
+              <td>Physical Metallurgy</td>
+            </tr>
+            <tr>
+              <td>ML2P003</td>
+              <td>Physical Metallurgy Laboratory</td>
+            </tr>
+            <tr>
+              <td>ML2P004</td>
+              <td>Thermodynamics of Materials Laboratory </td>
+            </tr>
+            <tr>
+              <td>ML2L004</td>
+              <td>Transport Phenomena and Kinetics of Metallurgical Processes</td>
+            </tr>
+            <tr>
+              <td>ML3L005</td>
+              <td>Chemical Metallurgy</td>
+            </tr>
+            <tr>
+              <td>ML3L002</td>
+              <td>Corrosion and Surface Engineering</td>
+            </tr>
+            <tr>
+              <td>PH3L001</td>
+              <td>Electrodynamics to Engineers</td>
+            </tr>
+            <tr>
+              <td>HS4L00 Bla bla 5th semester</td>
+              <td>Global Communication</td>
+            </tr>
+            <tr>
+              <td>ML3L003</td>
+              <td>Mechanical Properties and Testing of Materials</td>
+            </tr>
+            <tr>
+              <td>ML3P001</td>
+              <td>Mechanical testing & Working Laboratory</td>
+            </tr>
+            <tr>
+              <td>ML3L001</td>
+              <td>Mineral Processing</td>
+            </tr>
+            <tr>
+              <td>ML3L004</td>
+              <td>Phase Transformation of Materials</td>
+            </tr>
+            <tr>
+              <td>CE3L022</td>
+              <td>Construction Planning and Management</td>
+            </tr>
+            <tr>
+              <td>ML3L00 bla bla 6th semester</td>
+              <td>Deformation And Mechanical Working of Materials</td>
+            </tr>
+            <tr>
+              <td>HS3L002</td>
+              <td>Env.....</td>
+            </tr>
+            <tr>
+              <td>ML3L009</td>
+              <td>Introduction to Simulation and Modeling of Materials</td>
+            </tr>
+            <tr>
+              <td>ML3L007</td>
+              <td>Iron and Steel making</td>
+            </tr>
+            <tr>
+              <td>ML3L005</td>
+              <td>Material's characterization</td>
+            </tr>
+            <tr>
+              <td>ML3P002</td>
+              <td>Material's characterization Laboratory</td>
+            </tr>
+            <tr>
+              <td>ML3P003</td>
+              <td>Simulation and Modeling Laboratory</td>
+            </tr>
+            <tr>
+              <td>ML4L002</td>
+              <td>Elements of Electroceramics</td>
+            </tr>
+            <tr>
+              <td>ML4T001</td>
+              <td>Industrial Training Defense</td>
+            </tr>
+            <tr>
+              <td>ML4L001</td>
+              <td>Light Metals and Alloys</td>
+            </tr>
+            <tr>
+              <td>ML4L012</td>
+              <td>Materials Characterization Laboratory bla bla 7th semester</td>
+            </tr>
+            <tr>
+              <td>ML4L003</td>
+              <td>Polymers And Nanocomposites</td>
+            </tr>
+            <tr>
+              <td>ML4P002</td>
+              <td>Process Control and Instrumentation Laboratory</td>
+            </tr>
+            <tr>
+              <td>ML4L002</td>
+              <td>bla bla 8th semester every thing</td>
+            </tr>
+
+          </table>
+        </div>
+      </div>
+
+    </div>
+    <!-- Key Courses Section Ends  -->
+    <!-- Certificates Section Starts  -->
+    <div id="course-project" class="hi">
+      Laser
+      Entrepreneurship
+      Amtrendu solar
+    </div>
+    <!-- Certificates Section Ends  -->
+
+    <!-- More section Ends  -->
+
+
+    <!-- Contact Me section starts  -->
+    <div id="contactme" class="hi">
+      <div class="contactme-container">
+        <div class="contact-image-container">
+          <img src="images/contact-photo.png" alt="contact-img" class="contact-image">
+        </div>
+        <div class="contact-details">
+          <div style="color: rgb(52 43 43 / 72%); padding-bottom: 0;"> <span style=" display: block;" class="heading">
+              Sarthak Patnaik </span>
+            <a style="font-size:17px; padding-left: 10px;" href="mailto:sp56@iitbbs.ac.in">
+              email
+            </a>/<a style="font-size:17px; padding-left: 10px; width
+          :100%; color:#0000EE;" href="https://www.linkedin.com/in/sarthakpat/" target="_blank">linkedin</a>
+            <!-- <div></div> -->
+          </div>
+          <p class="about-me">Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Tempore quisquam numquam libero voluptatum quaerat
+            repellendus, repudiandae labore non nam reprehenderit accusamus
+            iusto nisi soluta, odio, quasi officia error corporis fugit?
+            Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Tempore quisquam numquam libero voluptatum quaerat
+            repellendus, repudiandae labore non nam reprehenderit accusamus
+            iusto nisi soluta, odio, quasi officia error corporis fugit?</p>
+
+
+          <ul class="id-links">
+            <div class="id-icons">
+              <a href="https://www.google.com/" target="_blank" style="width
+            :100%;"><svg xmlns="http://www.w3.org/2000/svg" height="2rem" viewBox="0 0 512 512">
+                  <path d="M294.75 188.19h-45.92V342h47.47c67.62 0 83.12-51.34 
+            83.12-76.91 0-41.64-26.54-76.9-84.67-76.9zM256 8C119 8 8 119 
+            8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.79 
+            360.76h-29.84v-207.5h29.84zm-14.92-231.14a19.57 19.57 0 1 
+            1 19.57-19.57 19.64 19.64 0 0 1-19.57 19.57zM300 
+            369h-81V161.26h80.6c76.73 0 110.44 54.83 110.44 103.85C410 318.39 
+            368.38 369 300 369z" />
+                </svg></a>
+            </div>
+            <div class="id-icons">
+              <a href="https://www.linkedin.com/in/sarthakpat/" target="_blank" style="width
+            :100%;"><svg xmlns="http://www.w3.org/2000/svg" height="2rem" viewBox="0 0 448 512">
+                  <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 
+            31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 
+            416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 
+            96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 
+            38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 
+            27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 
+            62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                </svg></a>
+            </div>
+            <div class="id-icons">
+              <a href="https://drive.google.com/file/d/1jB8pLevIQHCVN2qU297VI2D96B5v1uQl/view?usp=sharing"
+                target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" height="2rem" viewBox="0 0 384 512">
+                  <style>
+                    svg {
+                      fill: #5a6372
+                    }
+                  </style>
+                  <path d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 
+              32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384
+              64H256V0L384 128z" />
+                </svg>
+              </a>
+            </div>
+            <div class="id-icons">
+              <a href="mailto:sp56@iitbbs.ac.in">
+                <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512">
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                </svg>
+              </a>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Contact me section Ends  -->
+
+
+
+
+  </div>
+
+  <!-- Footer Section  -->
+  <footer class="footer">
+    <img src="images/iitbombay.png" alt="logo-iitbombay" class="footer-img">
+    <div class="footer-content">
+      <p class="foo-cont">Lorem asdflkjh</p>
+      <p class="foo-cont">Lorem ipsum dolor sit amet consectetur.</p>
+      <p class="foo-cont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, harum.</p>
+      <p class="foo-cont">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    </div>
+  </footer>
+
+
+
+
+  <!-- swipeer js  -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="counter.js"></script>
+</body>
+
+</html>
