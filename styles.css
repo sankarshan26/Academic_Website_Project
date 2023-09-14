@@ -691,8 +691,8 @@ tr:nth-child(even) {
   min-height: 15vh;
   background: rgb(211, 211, 211, 1);
   margin-top: 8vh;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-top: 0rem;
+  padding-bottom: 0.5rem;
 }
 
 .footer-img {
@@ -706,7 +706,7 @@ tr:nth-child(even) {
   display: flex;
   flex-direction: column;
   align-items: left;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
 }
 
 footer {
