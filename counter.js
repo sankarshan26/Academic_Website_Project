@@ -18,7 +18,7 @@ const swiper = new Swiper('.swiper', {
     },
     autoplay: {
       enabled: true,
-      delay:1500, // to control the speed of auto scroll
+      delay:2000, // to control the speed of auto scroll
     },
   });
   
