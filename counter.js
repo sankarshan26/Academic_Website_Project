@@ -4,7 +4,6 @@ const swiper = new Swiper('.swiper', {
     loop: true,
     spaceBetween: 30,
     effect: "fade",
-    speed: 500,
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
@@ -19,6 +18,7 @@ const swiper = new Swiper('.swiper', {
     },
     autoplay: {
       enabled: true,
+      delay:1500, // to control the speed of auto scroll
     },
   });
   
@@ -32,10 +32,23 @@ const swiper = new Swiper('.swiper', {
   states_.forEach(display_content);
   var menu = document.getElementById('menu-icon');
   var small_screen_nav_list = document.getElementById('nav-items-list');
-  
+  var navbar = document.querySelector('.navbar');
+  var navbarHeight = navbar.offsetHeight;
+
+
+
+
+
+  window.addEventListener("hashchange", function () {
+    // Scroll to the top of the page with smooth animation
+    window.scrollTo({
+        top: 0,
+    });
+});
   //adding onclick event to menu icon
   menu.addEventListener('click', menu_onclick);
-  
+
+
   //function for menu onclick
   function menu_onclick() {
     menu_state = !menu_state;
@@ -77,17 +90,18 @@ const swiper = new Swiper('.swiper', {
     states_.forEach(display_content);
   }
   
+
   function display_content(item) {
     if (item === active_state) {
       document.getElementById(item).style.display = "flex";
       console.log("Class for " + item + " : " + document.getElementById(item).style.display)
-      var navbar = document.querySelector('.navbar');
-      var navbarHeight = navbar.offsetHeight;
-      // console.log(navbarHeight)
-      //using additional padding top to align the content properly
-      document.getElementById(item).style.paddingTop = navbarHeight+"px";
+      
     }
     else {
       document.getElementById(item).style.display = "none";
     }
   }
+
+
+
+
