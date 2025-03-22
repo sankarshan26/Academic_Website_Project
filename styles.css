@@ -381,7 +381,7 @@ body {
 }
 
 .pdf-btn {
-  max-width: 100px;
+  max-width: 300px;
   min-width: 80px;
   width: 50%;
   outline: none;
@@ -474,7 +474,7 @@ body {
 
 .experience-card {
   width: 30%;
-  max-width: 300px;
+  max-width: 400px;
   min-width: 250px;
   box-shadow: 1px 2px 8px #b7b6b6;
   display: flex;
